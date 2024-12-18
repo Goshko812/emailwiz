@@ -80,6 +80,17 @@ example.org    TXT     v=spf1 mx a: -all
 The script will create a file, `~/dns_emailwiz` that will list our the records
 for your convenience, and also prints them at the end of the script.
 
+### Namecheap DNS records
+
+1. add TXT record - host should be `_dmarc` and the value should be the output at the end of the script
+
+2. add TXT record - host should be `mail._domainkey` and the value should be the output at the end of the script
+
+3. add TXT record - host should be `@` and the value should be the output at the end of the script
+
+4.  On MAIL SETTINGS option select `Custom MX` add new MX Record with host @ and value should be the output at the end of the script
+
+
 ### Add a rDNS/PTR record as well!
 
 Set a reverse DNS or PTR record to avoid getting spammed. You can do this at
